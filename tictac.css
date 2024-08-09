@@ -6,7 +6,11 @@
     
 }
 body{
-    background: linear-gradient(to bottom, #000000, turquoise)
+    background: linear-gradient(to bottom, #000000, turquoise);
+    height: auto;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 .container{
     margin-top: 4px;
@@ -47,16 +51,17 @@ h1{
     grid-template-columns: repeat(3, auto);
     width: auto;
     height: auto;
-    margin: 15px;
+    margin: 13px;
     padding: 4px;
     background-color: turquoise;
     border-radius: 12px;
     border: 1px solid #000;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479), 0 13px 16px rgba(0, 0, 0, .1);
 }
 .cell{
-    width: 100px;
-    height: 100px;
-    margin: 2px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
     background-color: black;
     cursor: pointer;
     border-radius: 6px;
@@ -67,15 +72,21 @@ h1{
     font-size: 60px;
     font-family: cursive;
 }
+.cell:hover{
+    transform: scale(1.1);
+}
 .win{
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-family: cursive;
     font-weight: 400;
 }
+.botones{
+    display: flex;
+}
 button{
-    margin: 8px;
-    width: 120px;
+    margin: 5px;
+    width: 130px;
     font-size: 28px;
     font-family: cursive;
     background-color: #000000;
@@ -85,7 +96,10 @@ button{
     border: 0;
     outline: 0;
     cursor: pointer;
-    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.479), 0 13px 16px rgba(0, 0, 0, .1);
+}
+button:hover{
+    transform: scale(1.1);
 }
 .cont{
     font-size: 40px;

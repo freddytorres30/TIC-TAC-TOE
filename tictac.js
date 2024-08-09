@@ -116,3 +116,20 @@ reset.addEventListener('click', function () {
     game=false
 })
 
+const reboot=document.getElementById('reboot')
+reboot.addEventListener('click', function () {
+    localStorage.removeItem('victoriasX')
+    localStorage.removeItem('victoriasO')
+    document.getElementById('contadorX').innerHTML='0'
+    document.getElementById('contadorO').innerHTML='0'
+
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = ''
+    }
+    document.querySelector('.win').innerHTML = ''
+    player =true
+    game=false
+    location.reload()
+})
+
+
