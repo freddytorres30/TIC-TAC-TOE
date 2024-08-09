@@ -1,0 +1,93 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+body{
+    background: linear-gradient(to bottom, #000000, turquoise)
+}
+.container{
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+h1{
+    color: turquoise;
+    font-family: cursive;
+    font-size: 60px;
+    text-shadow: 
+    7px 7px 0 #000,  
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,  
+   -1px 1px 0 #000;
+
+}
+#marcador{
+    width: 80%;
+    font-family: cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-shadow: 
+    5px 5px 0 #000000,  
+   -1px -1px 0 #000000,  
+    1px -1px 0 #000000,  
+   -1px 1px 0 #000000;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: auto;
+    height: auto;
+    margin: 15px;
+    padding: 4px;
+    background-color: turquoise;
+    border-radius: 12px;
+    border: 1px solid #000;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    font-family: cursive;
+}
+.win{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 400;
+}
+button{
+    margin: 8px;
+    width: 120px;
+    font-size: 28px;
+    font-family: cursive;
+    background-color: #000000;
+    color: whitesmoke;
+    height: 60px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+.cont{
+    font-size: 40px;
+    
+}
